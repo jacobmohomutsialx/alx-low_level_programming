@@ -12,12 +12,11 @@ if (n <= 0)
 putchar('\n');
 for (i = 0; i < n; i++)
 {
-for (c = 0; c < i; c++)
+for (c = i; c < 0; c--)
 {
 putchar(' ');
 }
 putchar('\\');
 putchar('\n');
 }
-putchar('\n');
 }
