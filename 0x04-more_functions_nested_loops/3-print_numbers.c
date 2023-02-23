@@ -1,16 +1,13 @@
 #include "main.h"
 
 /**
- * print_numbers - checks if input is a digit
- *
- *
+ * print_numbers - print all numbers 0 through 9 and then new line
  */
 
 void print_numbers(void)
 {
-for (int i = 0; i < 10; i++)
-{
-_putchar(i + '0');
-}
+int i;
+for (i = '0'; i <= '9'; i++)
+_putchar(i);
 _putchar('\n');
 }
