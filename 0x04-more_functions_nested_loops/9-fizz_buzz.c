@@ -19,20 +19,23 @@ char z = n % 5;
 
 if (x == 0 && z != 0)
 {
-printf("Fizz ");
+printf("Fizz");
 }
 else if (z == 0 && x != 0)
 {
-printf("Buzz ");
+printf("Buzz");
 }
 else if (z == 0 && x == 0)
 {
-printf("FizzBuzz ");
+printf("FizzBuzz");
 }
 else
 {
 printf("%d", n);
-printf(" ");
+}
+if (n < 100)
+{
+putchar(' ');
 }
 }
 putchar('\n');
