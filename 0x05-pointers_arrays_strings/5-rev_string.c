@@ -22,5 +22,4 @@ rev = s[i];
 s[i] = s[c];
 s[c] = rev;
 }
-return (rev);
 }
