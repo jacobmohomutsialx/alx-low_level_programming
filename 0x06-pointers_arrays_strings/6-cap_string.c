@@ -18,7 +18,7 @@ char *cap_string(char *s)
 	{
 		j = 0;
 
-		while (j < cspc)
+		while (j < c)
 		{
 			if ((i == 0 || s[i - 1] == del[j]) && (s[i] >= 97 && s[i] <= 122))
 				s[i] -= 32;
