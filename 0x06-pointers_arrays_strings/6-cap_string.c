@@ -9,7 +9,7 @@
   */
 char *cap_string(char *s)
 {
-	int i = 0; 
+	int i = 0;
 	int j;
 	int c = 13;
 	char del[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
