@@ -1,50 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-  * _strcmp - Compares two strings
-  * @s1: The first string
-  * @s2: The second string
-  *
-  * Return: int value
-  */
+ * _strcmp - compares two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: size difference of strings
+ */
+
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, j = 0, k = 0, rm = 0, l;
+	int count = 0;
 
-	while (s1[i])
+	while (*(s1 + count) != '\0' || *(s2 + count) != '\0')
 	{
-		i++;
+		if (*(s1 + count) != *(s2 + count))
+			return (*(s1 + count) - *(s2 + count));
+		count++;
 	}
-
-	while (s2[j])
-	{
-		j++;
-	}
-
-	if (i <= j)
-	{
-		l = i;
-	}
-	else
-	{
-		l = j;
-	}
-
-	while (k <= l)
-	{
-		if (s1[k] == s2[k])
-		{
-			k++;
-			continue;
-		}
-		else
-		{
-			rm = s1[k] - s2[k];
-			break;
-		}
-
-		k++;
-	}
-
-	return (rm);
+	return (0);
 }
