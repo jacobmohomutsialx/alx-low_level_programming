@@ -1,4 +1,4 @@
-#iinclude "main.h"
+#iinclude "lists.h"
 #include <stdio.h>
 
 /**
